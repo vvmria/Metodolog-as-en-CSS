@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    line-height: 2;
+    grid-template-areas: 
+        "header" 
+        "main" 
+        "footer";
+    min-height: 100vh;
+    gap: 10px;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    grid-area: header;
+    justify-content: space-between; /* Logo a la izquierda, nav a la derecha */
+    align-items: center; /* Alinear el logo y el menú en el centro vertical */
+    padding: 20px;
+    width: 100%;
+}
+
+.headerLogo {
+    flex-grow: 0; /* No se expande */
+}
+
+.headerNav {
+    flex-grow: 0; /* Evitar que el contenedor crezca */
+    margin-left: 900px; /* Ajusta la distancia desde el logo */
+}
+
+.headerNav-ul {
+    display: flex;
+    list-style: none;
+    gap: 15px; /* Espacio entre links */
+    justify-content: flex-start; /* Alinear a la izquierda */
+}
+
+.headerNav-Link {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.isActive {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* main */
+
+
